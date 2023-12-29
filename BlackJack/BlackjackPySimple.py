@@ -64,13 +64,20 @@ while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
         break
-    if event == "--set_bet--" and "--bet_amount" > 0:
+    if event == "--set_bet--" and player_bet > 0:
         player_bet = int("--bet_amount--`")
-        
+        #update the text of key player_bet
     
     if event == "--play--" and int(player_bet) > 0:
         getDeck()
         print(deck)
+        
+    # if event == "--hit--":
+    
+    
+    # if event == "--stand--":
+    
+    
         
     
     #print('You entered ', values[0])
