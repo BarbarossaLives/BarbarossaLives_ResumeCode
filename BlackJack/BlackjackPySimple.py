@@ -66,6 +66,7 @@ while True:
         break
     if event == "--set_bet--" and "--bet_amount" > 0:
         player_bet = int("--bet_amount--`")
+        
     
     if event == "--play--" and int(player_bet) > 0:
         getDeck()
